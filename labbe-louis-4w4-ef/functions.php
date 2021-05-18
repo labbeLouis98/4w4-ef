@@ -242,6 +242,16 @@ function extraire_cours($query){
 }
 add_action('pre_get_posts', 'extraire_cours' );
 
+function extraire_session($query){
+	if ($query->is_category('cours'))
+	{
+		$query->set('posts_per_page', -1);
+		$query->set('orderby', 'session');
+		$query->set('order', 'asc');
+	}
+
+}
+add_action('pre_get_posts', 'extraire_session' );
 /*
 L'adaptation de la requête par défaut quand on accède à la page d'accueil
 */

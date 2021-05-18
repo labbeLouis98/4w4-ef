@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*!
-Theme Name: labbe-louis-4w4-ef
+Theme Name: eddy-martin-4w4
 Theme URI: http://underscores.me/
-Author: labbe louis
+Author: eddy martin
 Author URI: http://referenced.ca
 Description: Description
 Version: 1.0.0
@@ -10,7 +10,7 @@ Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: labbe-louis-4w4-ef
+Text Domain: eddy-martin-4w4
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
@@ -714,10 +714,6 @@ textarea {
 	#primary .site-main (section principale de la page)
 	#colophon .site-footer	
 */
-.site-branding, #primary, #colophon {
-  margin-left: 3rem;
-}
-
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -1568,6 +1564,98 @@ La barre du millieu
   margin: 2% 4% 2% 3%;
 }
 
+/* local session
+--------------------------------------------- */
+.session {
+  /*
+    width: 100vw;
+    display: flex;
+    flex-direction: co;
+    justify-content: space-between;
+    font-size : clamp(.6rem, -0.875rem + 8.333vw,1rem);
+    
+
+    div{
+        border: 1px solid black;
+        flex-direction: column;
+        //width: 25%;
+        height: auto;
+        //flex-wrap: wrap;
+    }
+
+    */
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.session article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #aaa;
+  width: 20%;
+  margin: 1%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.session article div {
+  flex-direction: row;
+  margin: .4rem;
+  font-size: 1rem;
+}
+
+.session article a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*
+section.bloc {
+       
+    display : flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    article {
+        display : flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border : 1px solid #aaa;
+        width : 95%;
+        margin : 1%;
+        padding  : 1rem;
+        text-align : center;
+        p {
+            margin: .4rem;
+            font-size: 1rem;
+        }
+        a {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+    @include tablet {
+        article {
+            width : 47%;
+            margin : 1%;
+        }
+    }
+    @include desktop {
+        article {
+        width : 31%;
+        margin : 1%;
+        }
+    }
+}
+
+*/
 /* local sidebar
 --------------------------------------------- */
 #secondary {
