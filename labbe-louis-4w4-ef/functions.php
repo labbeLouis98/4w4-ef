@@ -247,7 +247,7 @@ function extraire_session($query){
 	{
 		$query->set('posts_per_page', -1);
 		$query->set('orderby', 'session');
-		$query->set('order', 'asc');
+		$query->set('order', 'desc');
 	}
 
 }

@@ -1,93 +1,79 @@
+
+.page-title, .archive-description {
+    margin-left: 3rem;
+}
+
+.archive-description{
+    font-size : clamp(2rem, #{"-0.875rem + 8.333vw"},3rem);
+}
+
 .session{
 
-    /*
-    width: 100vw;
-    display: flex;
-    flex-direction: co;
-    justify-content: space-between;
-    font-size : clamp(.6rem, #{"-0.875rem + 8.333vw"},1rem);
-    
-
-    div{
-        border: 1px solid black;
-        flex-direction: column;
-        //width: 25%;
-        height: auto;
-        //flex-wrap: wrap;
+    @include desktop{
+        margin-left: 3rem;
     }
-
-    */
-
-margin-left: 3rem;
+     margin: 0 auto;
     display : flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    article {
+
+    .Asession {
+        background-color: rgb(218, 228, 248);
         display : flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         border : 1px solid #aaa;
         width : 20%;
+        height: 6rem;
         margin : 1%;
-        padding  : 1rem;
+        padding  : 1%;
         text-align : center;
 
         div {
+            display: none;
             flex-direction: row;
             margin: .4rem;
             font-size: 1rem;
+            color: coral;
         }
+
         a {
-            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            text-align : center;
+            
+            font-size: 15px;
             font-weight: bold;
             text-decoration: none;
+            transform: rotate(270deg);
         }
     }
-}
 
-
-
-
-/*
-section.bloc {
-       
-    display : flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    article {
-        display : flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        border : 1px solid #aaa;
-        width : 95%;
-        margin : 1%;
-        padding  : 1rem;
-        text-align : center;
-        p {
-            margin: .4rem;
-            font-size: 1rem;
-        }
-        a {
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-decoration: none;
-        }
-    }
-    @include tablet {
-        article {
-            width : 47%;
-            margin : 1%;
-        }
-    }
+    
     @include desktop {
-        article {
-        width : 31%;
-        margin : 1%;
+        .Asession {
+
+            height: auto;
+
+            width: 20%;
+            a{
+                font-size: 1.5rem;
+                transform: rotate(0);
+            }
+
+            div{
+                display: flex;
+            }
+        
         }
-    }
 }
 
-*/
+.Tsession{
+    justify-content: left;
+background-color: rgb(147, 147, 241);
+}
+
+}
+
