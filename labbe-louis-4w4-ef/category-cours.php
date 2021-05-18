@@ -39,27 +39,42 @@ get_header();
 
 
 		<!--- article ---->
-        
 
-		<?php if (in_array($tPropriété['session'], ['1', '2', '3', '4', '5', '6']) ) : 
-        
-			if ("XXXXXX" != $precedent)	: ?>
+		
 			
-		<h1> <?php echo $tPropriété['session'] ?></h1>
+		<?php if (in_array($tPropriété['session'], ['1', '2', '3', '4', '5', '6']) ) : ?>
 
-		<?php endif; 
-
-		endif; ?>
+			
 
 		<?php get_template_part( 'template-parts/content', 'cours-session' ); ?>
 
+		<?php if ($tPropriété['typeCours'] == 'Web'):?>
+
+       <article class="rouge"> </article>
+
+       <?php endif; ?>
+			
+		<h1> <?php echo $tPropriété['session'] ?></h1>
+
+		<?php endif; ?>
+
+		
+
+		
+
 
 		<?php  $precedent = $tPropriété['session'];
+
+
+
 		
 
 			endwhile;?>
 
 	</section>
+
+
+
 
 	<?php endif; ?>
 

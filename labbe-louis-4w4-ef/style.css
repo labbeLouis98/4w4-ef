@@ -1639,6 +1639,10 @@ La barre du millieu
   background-color: #9393f1;
 }
 
+.rouge {
+  background-color: red;
+}
+
 /* local sidebar
 --------------------------------------------- */
 #secondary {
